@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<!-- 强制让文档与设备的宽度保持1：1 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>邀请函</title>
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				/*border: 1px solid red;*/
+			}
+			
+			html,
+			body {
+				height: 100%;
+			}
+			
+			body {
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.swiper-container {
+				width: 540px;
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			.swiper-slide {
+				font-size: 18px;
+				background: #fff;
+				overflow: hidden;
+				Center slide text vertically display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			
+			.section1 {
+				background: url(images/beijing_1.png);
+				background-size: 100% 100%;
+			}
+			
+			.img1_1 {
+				position: absolute;
+				top: -5%;
+				left: 0%;
+				width: 100%;
+				height: 110%
+			}
+			
+			.img1_2 {
+				position: absolute;
+				top: 5%;
+				left: 5%;
+				bottom: 5%;
+				right: 5%;
+				width: 90%;
+				height: 90%;
+				opacity: 0.5;
+			}
+			
+			.img1_3 {
+				position: absolute;
+				top: 7%;
+				left: 9%;
+				bottom: 7%;
+				right: 9%;
+				width: 82%;
+				height: 86%;
+			}
+			
+			.img1_4 {
+				position: absolute;
+				top: 23%;
+				left: -18%;
+				transform: rotate(140deg);
+				width: 40%;
+				height: 25%;
+				/*opacity: 0;*/
+			}
+			
+			.img1_5 {
+				position: absolute;
+				top: 33%;
+				left: -15%;
+				transform: rotate(125deg);
+				width: 40%;
+				height: 25%;
+			}
+			
+			@keyframes yezib {
+				0% {
+					top: 45%;
+					left: -55%;
+				}
+				100% {
+					top: 33%;
+					left: -15%;
+				}
+			}
+			
+			.yezib {
+				animation: yezib 2s;
+			}
+			
+			.img1_6 {
+				position: absolute;
+				left: 27%;
+				bottom: -10%;
+				transform: rotate(90deg);
+				width: 45%;
+				height: 25%;
+			}
+			
+			.img1_7 {
+				position: absolute;
+				right: 0%;
+				bottom: -4%;
+				width: 45%;
+				height: 25%;
+			}
+			
+			@keyframes yezid {
+				0% {
+					right: 0%;
+					bottom: -50%;
+				}
+				100% {
+					right: 0%;
+					bottom: -4%;
+				}
+			}
+			
+			.yezid {
+				animation: yezid 3s;
+			}
+			
+			.img1_8 {
+				position: absolute;
+				right: -10%;
+				bottom: 10%;
+				transform: rotate(-130deg);
+				width: 40%;
+				height: 20%;
+			}
+			
+			@keyframes yezie {
+				0% {
+					right: -50%;
+					bottom: 10%;
+				}
+				100% {
+					right: -10%;
+					bottom: 10%;
+				}
+			}
+			
+			.yezie {
+				animation: yezie 2.5s;
+			}
+			
+			.img1_9 {
+				position: absolute;
+				left: 35%;
+				width: 30%;
+				top: 4%;
+				display: none;
+			}
+			
+			.img1_10 {
+				position: absolute;
+				top: 25%;
+				left: 27%;
+				width: 50%;
+				display: none;
+			}
+			
+			.img1_11 {
+				position: absolute;
+				bottom: 40%;
+				left: 16%;
+				width: 70%;
+				display: none;
+			}
+			
+			.img1_12 {
+				position: absolute;
+				bottom: 32%;
+				left: 30%;
+				width: 40%;
+				display: none;
+			}
+			
+			.img1_13 {
+				position: absolute;
+				bottom: 26%;
+				left: 38%;
+				width: 26%;
+				display: none;
+			}
+			
+			.name {
+				font-size: 12px;
+				text-align: center;
+				color: #FFFFFF;
+				position: absolute;
+				bottom: 5%;
+				left: 34%;
+			}
+			
+			@keyframes tu {
+				0% {
+					top: 107%;
+				}
+				100% {
+					top: 7%;
+				}
+			}
+			
+			.tu1 {
+				animation: tu 1s;
+			}
+			
+			.img2_1 {
+				position: absolute;
+				width: 240%;
+				height: 106%;
+				left: 0%;
+			}
+			
+			.img2_2 {
+				position: absolute;
+				width: 60%;
+				height: 106%;
+				left: 75%;
+				background-color: rgb(35, 25, 77);
+				transform: rotate(-2deg);
+				display: none;
+			}
+			
+			.img2_3 {
+				position: absolute;
+				left: 60%;
+				top: 20%;
+				background-color: rgb(35, 25, 77);
+				font-size: 12px;
+				color: rgba(222, 184, 129, 0.843137);
+				/*display: none;*/
+			}
+			
+			#content1 {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				font-size: 12px;
+				color: rgba(222, 184, 129, 0.843137);
+			}
+			
+			.img2_4 {
+				position: absolute;
+				left: 100%;
+				bottom: -15%;
+				width: 70%;
+				height: 42%;
+				animation: circle 10s infinite linear;
+			}
+			
+			@-webkit-keyframes circle {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+			
+			.img3_1 {
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.img3_11 {
+				position: absolute;
+				top: 1%;
+				left: 1%;
+				width: 98%;
+				height: 98%;
+			}
+			
+			.img3_12 {
+				position: absolute;
+				left: 35%;
+				width: 30%;
+				top: 4%;
+			}
+			
+			.img3_2 {
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.img3_2 ul {
+				/*position: absolute;*/
+				width: 100%;
+				height: 100%;
+				text-align: left;
+				list-style: none;
+				padding: 0 20%;
+			}
+			
+			.img3_2 ul li:first-child {
+				position: absolute;
+				opacity: 0;
+				width: 100%;
+				top: 20%;
+				/*height: 10%;*/
+			}
+			
+			.img3_2 ul li:nth-child(2) {
+				position: absolute;
+				opacity: 0;
+				width: 100%;
+				top: 25%;
+			}
+			
+			.img3_2 ul li:nth-child(3) {
+				position: absolute;
+				opacity: 0;
+				width: 100%;
+				top: 30%;
+			}
+			
+			.img3_2 ul li:nth-child(4) {
+				position: absolute;
+				opacity: 0;
+				width: 100%;
+				top: 35%;
+			}
+			
+			.img3_2 ul li:nth-child(5) {
+				position: absolute;
+				opacity: 0;
+				width: 100%;
+				top: 45%;
+			}
+			
+			.img3_2 ul li:nth-child(6) {
+				position: absolute;
+				opacity: 0;
+				width: 100%;
+				top: 50%;
+			}
+			
+			.img3_2 ul li:nth-child(7) {
+				position: absolute;
+				opacity: 0;
+				width: 100%;
+				top: 60%;
+			}
+			
+			#content2 {
+				/*position: absolute;*/
+				width: 8.4%;
+				height: 100%;
+				font-size: 16px;
+				color: rgba(222, 184, 129, 0.843137);
+			}
+			
+			.img3_2 ul li:nth-child(8) {
+				position: absolute;
+				left: 0%;
+				width: 100%;
+				padding: 0 20%;
+				top: 65%;
+				height: 20%;
+				box-sizing: border-box;
+				opacity: 1;
+			}
+			
+			.img3_3 {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.img4_1 {
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.img4_2 {
+				position: absolute;
+				top: 18%;
+				left: 32%;
+				width: 100%;
+				font-size: 20px;
+				height: 5%;
+				opacity: 0;
+				text-align: left;
+				/*background-color: red;*/
+			}
+			
+			.img4_3 {
+				position: absolute;
+				top: 10%;
+				left: 10%;
+				width: 100%;
+				font-size: 20px;
+				height: 5%;
+				opacity: 0;
+				text-align: left;
+				/*background-color: red;*/
+			}
+			
+			@-webkit-keyframes leftin1 {
+				0% {
+					left: -50%;
+				}
+				100% {
+					left: 10%;
+				}
+			}
+			
+			@-webkit-keyframes leftin11 {
+				0% {
+					left: -50%;
+				}
+				100% {
+					left: 30%;
+				}
+			}
+			
+			.leftin11 {
+				animation: leftin11 1s ease-out;
+				/*animation-timing-function:ease-out;*/
+			}
+			
+			.leftin1 {
+				animation: leftin1 1s ease-out;
+				/*animation-timing-function:ease-out;*/
+			}
+			
+			.img4_4 {
+				position: absolute;
+				top: 15%;
+				left: 10%;
+				width: 100%;
+				font-size: 20px;
+				height: 5%;
+				text-align: left;
+				/*background-color: red;*/
+			}
+			
+			.img4_5 {
+				position: absolute;
+				top: 30%;
+				left: 10%;
+				width: 80%;
+				box-sizing: border-box;
+				font-size: 20px;
+				height: 5%;
+				text-align: left;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			@-webkit-keyframes leftin2 {
+				0% {
+					left: -50%;
+				}
+				100% {
+					left: 10%;
+				}
+			}
+			
+			.leftin2 {
+				animation: leftin2 1s ease-out;
+				/*animation-delay: 1s;*/
+				/*animation-timing-function:ease-out;*/
+			}
+			
+			.img4_6 {
+				position: absolute;
+				top: 55%;
+				left: 10%;
+				width: 80%;
+				font-size: 20px;
+				text-align: left;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			@-webkit-keyframes leftin3 {
+				0% {
+					left: -50%;
+				}
+				100% {
+					left: 10%;
+				}
+			}
+			
+			.leftin3 {
+				animation: leftin2 1s ease-out;
+				/*animation-delay: 1.5s;*/
+				/*animation-timing-function:ease-out;*/
+			}
+			
+			.img4_7 {
+				position: absolute;
+				top: 33%;
+				left: 10%;
+				width: 100%;
+				font-size: 20px;
+				height: 5%;
+				text-align: left;
+				/*background-color: red;*/
+			}
+			
+			.img4_8 {
+				position: absolute;
+				top: 38%;
+				left: 10%;
+				width: 100%;
+				font-size: 20px;
+				height: 5%;
+				text-align: left;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			.img4_9 {
+				position: absolute;
+				top: 43%;
+				left: 10%;
+				width: 100%;
+				font-size: 20px;
+				height: 5%;
+				text-align: left;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			@-webkit-keyframes leftin4 {
+				0% {
+					left: -50%;
+				}
+				100% {
+					left: 10%;
+				}
+			}
+			
+			.leftin4 {
+				animation: leftin4 1s ease-out;
+				/*animation-delay: 2s;*/
+				/*animation-timing-function:ease-out;*/
+			}
+			
+			.img4_10 {
+				position: absolute;
+				top: 62%;
+				left: -8%;
+				width: 110%;
+				height: 50%;
+				transform: rotate(-8deg);
+				opacity: 0;
+			}
+			
+			@-webkit-keyframes rightin1 {
+				0% {
+					left: 32%;
+				}
+				100% {
+					left: -8%;
+				}
+			}
+			
+			.rightin1 {
+				animation: rightin1 1s ease-out;
+			}
+			.qrimg{
+				width: 50%;
+			}
+			.img4_11 {
+				position: absolute;
+				top: 50%;
+				left: 5%;
+				width: 90%;
+				height: 50%;
+				opacity: 0;
+			}
+			
+			@-webkit-keyframes rightin2 {
+				0% {
+					left: 45%;
+				}
+				100% {
+					left: 5%;
+				}
+			}
+			
+			.rightin2 {
+				animation: rightin2 1s ease-out;
+				/*animation-delay: 2s;*/
+				/*animation-timing-function:ease-out;*/
+			}
+			
+			.img5_2 {
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.img5_2 ul {
+				/*position: absolute;*/
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				text-align: left;
+				list-style: none;
+				padding: 0;
+			}
+			
+			.img5_2 ul li {
+				width: 100%;
+				box-sizing: border-box;
+				text-align: center;
+			}
+			
+			.img5_2 ul li:first-child {
+				position: absolute;
+				opacity: 0;
+				top: 14%;
+				/*height: 10%;*/
+			}
+			
+			.img5_2 ul li:nth-child(2) {
+				position: absolute;
+				opacity: 0;
+				top: 21%;
+			}
+			
+			.img5_2 ul li:nth-child(3) {
+				position: absolute;
+				opacity: 0;
+				top:30%;
+			}
+			
+			.img5_2 ul li:nth-child(4) {
+				position: absolute;
+				opacity: 0;
+				top: 38%;
+			}
+			
+			.img5_2 ul li:nth-child(5) {
+				position: absolute;
+				opacity: 0;
+				top: 53%;
+			}
+			
+			.img5_2 ul li:nth-child(6) {
+				position: absolute;
+				opacity: 0;
+				top: 72%;
+			}
+			
+			.img5_2 ul li:nth-child(7) {
+				position: absolute;
+				opacity: 0;
+				top: 80%;
+			}
+			
+			#content2 {
+				/*position: absolute;*/
+				width: 8.4%;
+				font-size: 16px;
+				color: rgba(222, 184, 129, 0.843137);
+			}
+			
+			.img5_2 ul li:nth-child(8) {
+				position: absolute;
+				left: 0%;
+				padding: 0 20%;
+				top: 90%;
+				height: 20%;
+				box-sizing: border-box;
+				opacity: 1;
+			}
+			
+			.img6_2 {
+				position: absolute;
+				top: 20%;
+				left: -13%;
+				width: 80%;
+				height: 80%;
+				/*text-align: right;*/
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			.img6_3 {
+				position: absolute;
+				top: 5%;
+				right: 15%;
+				width: 80%;
+				height: 80%;
+				text-align: right;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			.img6_4 {
+				position: absolute;
+				top: 10%;
+				right: 15%;
+				width: 80%;
+				height: 80%;
+				text-align: right;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			.img6_5 {
+				position: absolute;
+				top: 15%;
+				right: 15%;
+				width: 80%;
+				height: 80%;
+				text-align: right;
+				/*opacity: 0;*/
+				/*background-color: red;*/
+			}
+			
+			.img6_6 {
+				position: absolute;
+				top: 20%;
+				right: 15%;
+				width: 80%;
+				height: 80%;
+				text-align: right;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			.img6_7 {
+				position: absolute;
+				top: 28%;
+				right: 15%;
+				width: 80%;
+				height: 80%;
+				text-align: right;
+				/*opacity: 0;*/
+				/*background-color: red;*/
+			}
+			
+			.img6_8 {
+				position: absolute;
+				top: 33%;
+				right: 15%;
+				width: 80%;
+				height: 80%;
+				text-align: right;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			.img6_9 {
+				position: absolute;
+				top: 38%;
+				right: 15%;
+				width: 80%;
+				height: 80%;
+				text-align: right;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			.img6_10 {
+				position: absolute;
+				top: 43%;
+				right: 15%;
+				width: 80%;
+				height: 80%;
+				text-align: right;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			.img6_11 {
+				position: absolute;
+				top: 48%;
+				right: 15%;
+				width: 80%;
+				height: 80%;
+				text-align: right;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			.img7_1 {
+				position: absolute;
+				top: 45%;
+				right: 4%;
+				width: 85%;
+				height: 55%;
+				opacity: 0;
+				/*background-color: red;*/
+			}
+			
+			.img7_2 {
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				top: 5%;
+				left: 0%;
+				opacity: 0;
+			}
+			
+			.img7_3 {
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				top: 10%;
+				left: 0%;
+				opacity: 0;
+			}
+			
+			.img7_4 {
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				top: 15%;
+				left: 0%;
+				/*opacity: 0;*/
+			}
+			
+			.img7_5 {
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				top: 20%;
+				left: 0%;
+				opacity: 0;
+			}
+			
+			.img7_6 {
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				top: 27%;
+				left: 0%;
+				/*opacity: 0;*/
+			}
+			
+			.img7_7 {
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				top: 32%;
+				left: 0%;
+				opacity: 0;
+			}
+			
+			.section8 {
+				background: url(images/beijing_1.png);
+				background-size: 100% 100%;
+			}
+			
+			.img8_1 {
+				position: absolute;
+				top: -5%;
+				left: 0%;
+				width: 100%;
+				height: 110%
+			}
+			
+			.img8_2 {
+				position: absolute;
+				top: 2%;
+				left: 2%;
+				bottom: 2%;
+				right: 2%;
+				width: 96%;
+				height: 96%;
+				opacity: 0.5;
+			}
+			
+			.img8_3 {
+				position: absolute;
+				top: 20%;
+				left: 10%;
+				bottom: 7%;
+				right: 9%;
+				width: 82%;
+				height: 86%;
+			}
+			
+			.img8_4 {
+				position: absolute;
+				top: 23%;
+				left: -18%;
+				transform: rotate(140deg);
+				width: 40%;
+				height: 25%;
+				/*opacity: 0;*/
+			}
+			
+			.img8_5 {
+				position: absolute;
+				top: 33%;
+				left: -15%;
+				transform: rotate(125deg);
+				width: 40%;
+				height: 25%;
+			}
+			
+			.img8_6 {
+				position: absolute;
+				left: 27%;
+				bottom: -10%;
+				transform: rotate(90deg);
+				width: 45%;
+				height: 25%;
+			}
+			
+			.img8_7 {
+				position: absolute;
+				right: 0%;
+				bottom: -4%;
+				width: 45%;
+				height: 25%;
+			}
+			
+			@keyframes yezia {
+				0% {
+					left: -50%;
+				}
+				100% {
+					left: -18%;
+				}
+			}
+			
+			.yezia {
+				animation: yezia 1.5s;
+			}
+			
+			@keyframes yezib {
+				0% {
+					top: 45%;
+					left: -55%;
+				}
+				100% {
+					top: 33%;
+					left: -15%;
+				}
+			}
+			
+			.yezib {
+				animation: yezib 2s;
+			}
+			
+			@keyframes yezic {
+				0% {
+					left: 27%;
+					bottom: -50%;
+				}
+				100% {
+					left: 27%;
+					bottom: -10%;
+				}
+			}
+			
+			.yezic {
+				animation: yezic 3.5s;
+			}
+			
+			@keyframes yezid {
+				0% {
+					right: 0%;
+					bottom: -50%;
+				}
+				100% {
+					right: 0%;
+					bottom: -4%;
+				}
+			}
+			
+			.yezid {
+				animation: yezid 3s;
+			}
+			
+			.img8_8 {
+				position: absolute;
+				right: -10%;
+				bottom: 10%;
+				transform: rotate(-130deg);
+				width: 40%;
+				height: 20%;
+			}
+			
+			@keyframes yezie {
+				0% {
+					right: -50%;
+					bottom: 10%;
+				}
+				100% {
+					right: -10%;
+					bottom: 10%;
+				}
+			}
+			
+			.yezie {
+				animation: yezie 2.5s;
+			}
+			
+			@keyframes biankuang {
+				0% {
+					top: -100%;
+					left: 5%;
+				}
+				100% {
+					top: 5%;
+					left: 5%;
+					bottom: 5%;
+					right: 5%;
+				}
+			}
+			
+			.biankuang {
+				animation: biankuang 1s;
+			}
+			
+			@keyframes tu {
+				0% {
+					top: 107%;
+				}
+				100% {
+					top: 7%;
+				}
+			}
+			
+			.tu1 {
+				animation: tu 1s;
+			}
+			
+			.wenzi1 {
+				position: absolute;
+				top: 30%;
+				width: 50%;
+				text-align: center;
+				color: #fff;
+				left: 27%;
+				opacity: 0;
+				/*white-space: pre;*/
+				/*line-height: 100%;*/
+			}
+			
+			.wenzi8_1 {
+				position: relative;
+				width: 50px;
+				font-size: 64px;
+				color: #fff;
+				top: 10%;
+			}
+			
+			.wenzi2 {
+				position: absolute;
+				top: 40%;
+				left: 34%;
+				opacity: 0;
+				/*white-space: pre;*/
+				/*line-height: 100%;*/
+			}
+			
+			.wenzi8_2 {
+				position: relative;
+				width: 50px;
+				font-size: 64px;
+				color: #fff;
+				top: 20%;
+				/*opacity: 0;*/
+			}
+			
+			.img8_9 {
+				position: absolute;
+				width: 35%;
+				height: 11%;
+				top: 11%;
+				left: 32%;
+				opacity: 0;
+			}
+			
+			.img8_10 {
+				position: absolute;
+				width: 220%;
+				height: 25%;
+				top: 25%;
+				left: 10%;
+				opacity: 0;
+			}
+			
+			.img8_11 {
+				background: url(images/daoxibeijing.jpg);
+				position: absolute;
+				width: 70%;
+				height: 10%;
+				top: 52%;
+				left: 15%;
+				opacity: 0;
+			}
+			
+			.img8_11_1 {
+				position: absolute;
+				width: 100%;
+				height: 90%;
+				top: 0%;
+				left: 0%;
+				/*opacity: 0;*/
+			}
+			
+			.img_hengxian1 {
+				background: url(images/hengxian.png);
+				background-size: 100% 100%;
+				position: absolute;
+				width: 70%;
+				height: 5%;
+				top: 47%;
+				left: 15%;
+				opacity: 0;
+			}
+			
+			.img_hengxian2 {
+				background: url(images/hengxian.png);
+				background-size: 100% 100%;
+				position: absolute;
+				width: 70%;
+				height: 5%;
+				top: 62%;
+				left: 15%;
+				opacity: 0;
+			}
+			
+			.wenzi3 {
+				position: absolute;
+				width: 100%;
+				height: 10%;
+				top: 72%;
+				left: 0%;
+				text-align: center;
+				font-size: 16px;
+				color: #fff;
+				opacity: 0;
+			}
+			
+			.btn {
+				background: url(images/bgmBtn.svg);
+				background-size: 100% 100%;
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				top: 6%;
+				right: 6%;
+				z-index: 999;
+			}
+			
+			.btnonclick {
+				animation: circle 1s infinite linear;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="swiper-container">
+			<div class="btn"></div>
+			<audio id="video" autoplay src="http://res1.eqh5.com/o_1aj4i1djr340g3h1v2t1e6j1vga9.mp3"></audio>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide section1">
+					<!--<img class="img1_8" src="images/shuye_3.png">-->
+					<img class="img1_9" src="images/logo.png">
+					<img class="img1_10" src="images/yaoqinghan.png">
+					<img class="img1_11" src="images/yingwenzi.png">
+					<img class="img1_12" src="images/date.png">
+					<img class="img1_13" src="images/location.png">
+					<p class="name">烨链(上海)科技有限公司</p>
+				</div>
+				<!--<div class="swiper-slide section2">
+            <img class="img2_1" src="images/ertubeijing.jpg" alt="">
+            <div class="img2_2"></div>
+            <div class="img2_3">
+                <span id="content1" style="white-space:pre">
+            </div>
+            <img class="img2_4" src="images/ertuhua.png" alt="">
+        </div>-->
+				<div class="swiper-slide section3">
+					<img class="img3_1" src="images/beijing_2.png" alt="">
+					<img class="img3_11" src="images/bg.png" alt="">
+					<img class="img3_12" src="images/logo.png" alt="">
+					<div class="img3_2">
+						<ul style="height:100%;">
+							<li style="font-size: 24px;color: #fff;">主题</li>
+							<li style="font-size: 20px;color: #fff;height:5%;"> 火花链Turn-Key解决方案</li>
+							<li style="font-size: 20px;color: #fff;height:5%;">构建全新商业模式</li>
+							<li style="font-size: 20px;color: #fff;"> 赋能产业经济起飞！</li>
+							<li style="font-size: 24px;color: #fff;">时间</li>
+							<li style="font-size: 20px;color: #fff;height:5%;"> 2018/10/25 14:00-17:00 </li>
+							<li style="font-size: 24px;color: #fff;">地址</li>
+							<li style="font-size: 16px;color: #fff;height:5%;"> 深圳市南山区高新园北区朗山路 19号源政创业大厦A栋901-902</li>
+
+						</ul>
+						<p class="name">烨链(上海)科技有限公司</p>
+					</div>
+				</div>
+				<div class="swiper-slide section4">
+					<img class="img3_1" src="images/beijing_2.png" alt="">
+					<img class="img3_11" src="images/bg.png" alt="">
+					<img class="img3_12" src="images/logo.png" alt="">
+
+					<div class="img4_2"><span style="font-size: 24px;color:rgb(255,255,255);">会 / 议 / 背 / 景</div>
+            <div class="img4_5"><span style="font-size: 20px;color:rgb(255,255,255);">2018年5⽉28⽇，习近平主席在中国科学院院士大会上发表建设世界科技强国的讲话，明确区块链技术是中国科技强国，中华民族伟大复兴重要的科技⼒量。</span></div>
+					<div class="img4_6"><span style="font-size: 20px;color: rgb(255,255,255);">2018年5⽉28⽇，习近平主席在中国科学院院士大会上发表建设世界科技强国的讲话，明确区块链技术是中国科技强国，中华民族伟大复兴重要的科技⼒量。</span></div>
+					<p class="name">烨链(上海)科技有限公司</p>
+
+				</div>
+				<div class="swiper-slide section5">
+					<img class="img3_1" src="images/beijing_2.png" alt="">
+					<img class="img3_11" src="images/bg.png" alt="">
+					<img class="img3_12" src="images/logo.png" alt="">
+					<div class="img5_2">
+						<ul style="height:100%;">
+							<li style="font-size: 16px;color: #fff;">会议议程</li>
+							<li style="font-size: 16px;color: #fff">13:30 -14:00 <br /> <span style="font-size: 14px;">会议签到</span> </li>
+							<li style="font-size: 16px;color: #fff;">14:00 -14:10 <br /> <span style="font-size: 14px;">主持人发言</span></li>
+							<li style="font-size: 16px;color: #fff;">14:10 - 15:00 <br /> <span style="font-size: 14px;">主题演讲一：</span>
+								<br /> <span style="font-size: 14px;"z>火花链Turn-Key解决方案</span>
+								<br /> <span style="font-size: 14px;">构建产业全新商业模式</span>
+							</li>
+							<li style="font-size: 16px;color: #fff;">15:00-15:40 <br /> <span style="font-size: 14px;">主题演讲二：</span>
+								<br /> <span style="font-size: 14px;">赋能产业经济</span><br /><span style="font-size: 14px;">取得行业发展先机</span><br /> <span style="font-size: 14px;">精彩案例分享</span>
+							</li>
+							<li style="font-size: 16px;color: #fff;">15:40-16:00 <br /> <span style="font-size: 14px;">现场提问环节</span> </li>
+							<li style="font-size: 16px;color: #fff;">16:00-17:00 <br /> <span style="font-size: 14px;">嘉宾沟通会谈</span>
+							</li>
+						</ul>
+						<p class="name">烨链(上海)科技有限公司</p>
+					</div>
+				</div>
+				<div class="swiper-slide section8">
+					
+					<img class="img8_1" src="images/beijing_2.png">
+					<img class="img8_2" src="images/bg.png">
+					<img class="img3_12" src="images/logo.png" alt="">
+					<div class="img8_3"><span style="font-size: 24px;color:rgb(255,255,255);">活动报名</div>
+					<div class="wenzi1"><span>微信扫一扫二维码<br />参与活动报名</span></div>
+					<div class="wenzi2"><span><img src="images/qr.png" class="qrimg"/></span></div>
+					<p class="name">烨链(上海)科技有限公司</p>
+					
+				</div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+
+			<!-- 如果需要导航按钮 -->
+			<!-- <div class="swiper-button-prev"></div> -->
+			<!-- <div class="swiper-button-next"></div> -->
+
+			<!-- 如果需要滚动条 -->
+			<!-- <div class="swiper-scrollbar"></div> -->
+		</div>
+		<script src="js/swiper-3.4.2.min.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/typed.min.js"></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				direction: 'vertical',
+				// loop: true,
+
+				// 如果需要分页器
+				pagination: '.swiper-pagination',
+				onInit: function(swiper) {
+					//Swiper初始化了
+					//alert(swiper.activeIndex);提示Swiper的当前索引
+					console.log("onInit" + swiper.activeIndex);
+					$(".img1_2").addClass("biankuang").css("opacity", 0.5);
+					$(".img1_3").addClass("tu1").css("opacity", 1);
+					$(".img1_4").addClass("yezia").css("opacity", 1);
+					$(".img1_5").addClass("yezib").css("opacity", 1);
+					$(".img1_6").addClass("yezic").css("opacity", 1);
+					$(".img1_7").addClass("yezid").css("opacity", 1);
+					$(".img1_8").addClass("yezie").css("opacity", 1);
+					$(".img1_9").delay(500).fadeIn();
+					$(".img1_10").delay(500).fadeIn();
+					$(".img1_11").delay(1500).fadeIn();
+					$(".img1_12").delay(2000).fadeIn();
+					$(".img1_13").delay(2500).fadeIn();
+				},
+				onSlideChangeEnd: function(swiper) {
+					console.log("onSlideChangeEnd" + swiper.activeIndex);
+					switch(swiper.activeIndex) {
+						case 0:
+							$(".img1_2").stop(true, true).addClass("biankuang").css("opacity", 0.5);
+							$(".img1_3").stop(true, true).addClass("tu1").css("opacity", 1);
+							$(".img1_4").stop(true, true).addClass("yezia").css("opacity", 1);
+							$(".img1_5").stop(true, true).addClass("yezib").css("opacity", 1);
+							$(".img1_6").stop(true, true).addClass("yezic").css("opacity", 1);
+							$(".img1_7").stop(true, true).addClass("yezid").css("opacity", 1);
+							$(".img1_8").stop(true, true).addClass("yezie").css("opacity", 1);
+							$(".img1_9").stop(true, true).delay(3000).fadeIn();
+							$(".img1_10").stop(true, true).delay(2000).fadeIn();
+							$(".img1_11").stop(true, true).delay(2500).fadeIn();
+							$(".img1_12").stop(true, true).delay(2000).fadeIn();
+							$(".img1_13").stop(true, true).delay(1500).fadeIn();
+							break;
+						case 1:
+							// $(".img3_3").addClass("bounceInUp animated").animate({opacity:"1"});
+							$(".img3_2").children().children().eq(0).delay(1000).animate({
+								opacity: "1"
+							});
+							$(".img3_2").children().children().eq(1).delay(1500).animate({
+								opacity: "1"
+							});
+							$(".img3_2").children().children().eq(2).delay(2000).animate({
+								opacity: "1"
+							});
+							$(".img3_2").children().children().eq(3).delay(2500).animate({
+								opacity: "1"
+							});
+							$(".img3_2").children().children().eq(4).delay(3000).animate({
+								opacity: "1"
+							});
+							$(".img3_2").children().children().eq(5).delay(3500).animate({
+								opacity: "1"
+							});
+							$(".img3_2").children().children().eq(6).delay(4000).animate({
+								opacity: "1"
+							});
+							$(".img3_2").children().children().eq(7).delay(4500).animate({
+								opacity: "1"
+							});
+							$(".img3_2").children().children().eq(8).delay(5000).animate({
+								opacity: "1"
+							});
+							//          $("#content2").fadeIn();
+							//          $("#content2").typed({
+							//              strings: ["对的人，固然重要\n但我们认为\n美味是幸福最好的奖赏"],
+							//              typeSpeed: 200,
+							//              // loopcount: false,
+							//              showCursor: false,
+							//              attr:null,
+							//          });
+							//          $("#content2").delay(6500).fadeOut();
+							break;
+						case 2:
+							$(".img4_10").addClass("rightin1").css("opacity", 1);
+							$(".img4_11").addClass("rightin2").css("opacity", 1);
+							$(".img4_2").delay(500).animate({
+								"opacity": 1
+							}, 0, function() {
+								$(this).addClass("leftin11");
+							});
+							$(".img4_3").delay(500).animate({
+								"opacity": 1
+							}, 0, function() {
+								$(this).addClass("leftin1");
+							});
+							$(".img4_5").delay(1000).animate({
+								"opacity": 1
+							}, 0, function() {
+								$(this).addClass("leftin2");
+							});
+							$(".img4_6").delay(1500).animate({
+								"opacity": 1
+							}, 0, function() {
+								$(this).addClass("leftin3");
+							});
+							$(".img4_8").delay(2000).animate({
+								"opacity": 1
+							}, 0, function() {
+								$(this).addClass("leftin3");
+							});
+							$(".img4_9").delay(2500).animate({
+								"opacity": 1
+							}, 0, function() {
+								$(this).addClass("leftin3");
+							});
+							break;
+						case 3:
+							$(".img5_2").children().children().eq(0).delay(1000).animate({
+								opacity: "1"
+							}, 0, function() {
+								$(this).addClass("fadeInUp animated");
+							});
+							$(".img5_2").children().children().eq(1).delay(1500).animate({
+								opacity: "1"
+							});
+							$(".img5_2").children().children().eq(2).delay(2000).animate({
+								opacity: "1"
+							});
+							$(".img5_2").children().children().eq(3).delay(2500).animate({
+								opacity: "1"
+							});
+							$(".img5_2").children().children().eq(4).delay(3000).animate({
+								opacity: "1"
+							});
+							$(".img5_2").children().children().eq(5).delay(3500).animate({
+								opacity: "1"
+							});
+							$(".img5_2").children().children().eq(6).delay(4000).animate({
+								opacity: "1"
+							});
+							$(".img5_2").children().children().eq(7).delay(4500).animate({
+								opacity: "1"
+							});
+							$(".img5_2").children().children().eq(8).delay(5000).animate({
+								opacity: "1"
+							});
+							break;
+						case 4:
+							$(".img8_2").stop(true, true).addClass("biankuang").css("opacity", 0.5);
+							$(".img8_3").stop(true, true).addClass("tu1").css("opacity", 1);
+							$(".img8_4").stop(true, true).addClass("yezia").css("opacity", 1);
+							$(".img8_5").stop(true, true).addClass("yezib").css("opacity", 1);
+							$(".img8_6").stop(true, true).addClass("yezic").css("opacity", 1);
+							$(".img8_7").stop(true, true).addClass("yezid").css("opacity", 1);
+							$(".img8_8").stop(true, true).addClass("yezie").css("opacity", 1);
+							$(".wenzi1").stop(true, true).delay(1000).animate({
+								opacity: 1
+							}, 0, function() {
+								$(this).addClass("fadeIn animated");
+							});
+							$(".wenzi2").stop(true, true).delay(2000).animate({
+								opacity: 1
+							}, 1000, function() {
+								$(this).removeClass("fadeIn animated");
+								$(".img8_9").stop(true, true).delay(1000).animate({
+									opacity: 1
+								}, 0, function() {
+									$(this).fadeIn();
+								});
+								$(".img8_10").stop(true, true).delay(1500).animate({
+									opacity: 1
+								}, 0, function() {
+									$(this).fadeIn();
+								});
+								$(".img8_11").stop(true, true).delay(2500).animate({
+									opacity: 1
+								}, 0, function() {
+									$(this).fadeIn();
+								});
+								$(".img_hengxian1").stop(true, true).delay(2000).animate({
+									opacity: 1
+								}, 0, function() {
+									$(this).fadeIn();
+								});
+								$(".img_hengxian2").stop(true, true).delay(3000).animate({
+									opacity: 1
+								}, 0, function() {
+									$(this).fadeIn();
+								});
+								$(".wenzi3").stop(true, true).delay(3500).animate({
+									opacity: 1
+								}, 0, function() {
+									$(this).fadeIn();
+								});
+							});
+							break;
+					}
+				},
+				onSlideChangeStart: function(swiper) {
+					if(swiper.activeIndex != 0) {
+						$(".img1_2").stop(true, true).removeClass("biankuang").css("opacity", 0);
+						$(".img1_3").stop(true, true).removeClass("tu1").css("opacity", 0);
+						$(".img1_4").stop(true, true).removeClass("yezia").css("opacity", 0);
+						$(".img1_5").stop(true, true).removeClass("yezib").css("opacity", 0);
+						$(".img1_6").stop(true, true).removeClass("yezic").css("opacity", 0);
+						$(".img1_7").stop(true, true).removeClass("yezid").css("opacity", 0);
+						$(".img1_8").stop(true, true).removeClass("yezie").css("opacity", 0);
+						$(".img1_9").stop(true, true).fadeOut();
+						$(".img1_10").stop(true, true).fadeOut();
+						$(".img1_11").stop(true, true).fadeOut();
+						$(".img1_12").stop(true, true).fadeOut();
+						$(".img1_13").stop(true, true).fadeOut();
+					}
+					if(swiper.activeIndex != 1) {
+						$(".img2_1").stop(true, true).css("left", "0%");
+						$(".img2_2").stop(true, true).css("display", "none").css("left", "75%");
+						$("#content1").fadeOut();
+						$(".img2_4").stop(true, true).animate({
+							left: "100%"
+						});
+					}
+					if(swiper.activeIndex != 2) {
+						$(".img3_2").children().children().eq(0).stop(true, true).css("opacity", 0);
+						$(".img3_2").children().children().eq(3).stop(true, true).css("opacity", 0);
+						$(".img3_2").children().children().eq(1).stop(true, true).css("opacity", 0);
+						$(".img3_2").children().children().eq(5).stop(true, true).css("opacity", 0);
+						$(".img3_2").children().children().eq(4).stop(true, true).css("opacity", 0);
+						$(".img3_2").children().children().eq(6).stop(true, true).css("opacity", 0);
+						$(".img3_2").children().children().eq(7).stop(true, true).css("opacity", 0).removeClass("bounceInDown animated");
+						$(".img3_2").children().children().eq(8).stop(true, true).css("opacity", 0).removeClass("shake animated");
+						$(".img3_2").children().children().eq(2).css("opacity", "0");
+						$("#content2").fadeOut();
+					}
+					if(swiper.activeIndex != 3) {
+						$(".img4_10").stop(true, true).removeClass("rightin1").css("opacity", 0);
+						$(".img4_11").stop(true, true).removeClass("rightin2").css("opacity", 0);
+						$(".img4_2").stop(true, true).removeClass("leftin1").css("opacity", 0);
+						$(".img4_3").stop(true, true).removeClass("leftin1").css("opacity", 0);
+						$(".img4_5").stop(true, true).removeClass("leftin2").css("opacity", 0);
+						$(".img4_6").stop(true, true).removeClass("leftin3").css("opacity", 0);
+						$(".img4_8").stop(true, true).removeClass("leftin3").css("opacity", 0);
+						$(".img4_9").stop(true, true).removeClass("leftin3").css("opacity", 0);
+					}
+					if(swiper.activeIndex != 4) {
+						$(".img5_2").children().children().eq(0).stop(true, true).css("opacity", 0);
+						$(".img5_2").children().children().eq(3).stop(true, true).css("opacity", 0);
+						$(".img5_2").children().children().eq(1).stop(true, true).css("opacity", 0);
+						$(".img5_2").children().children().eq(5).stop(true, true).css("opacity", 0);
+						$(".img5_2").children().children().eq(4).stop(true, true).css("opacity", 0);
+						$(".img5_2").children().children().eq(6).stop(true, true).css("opacity", 0);
+						$(".img5_2").children().children().eq(7).stop(true, true).css("opacity", 0).removeClass("bounceInDown animated");
+						$(".img5_2").children().children().eq(8).stop(true, true).css("opacity", 0).removeClass("shake animated");
+						$(".img5_2").children().children().eq(2).css("opacity", "0");
+					}
+					if(swiper.activeIndex != 5) {
+						$(".img6_2").stop(true, true).removeClass("fadeInLeft animated").css("opacity", 0);
+						$(".img6_3").stop(true, true).removeClass("fadeInRight animated").css("opacity", 0);
+						$(".img6_4").stop(true, true).removeClass("fadeInRight animated").css("opacity", 0);
+						$(".img6_6").stop(true, true).removeClass("fadeInRight animated").css("opacity", 0);
+						$(".img6_8").stop(true, true).removeClass("fadeInRight animated").css("opacity", 0);
+						$(".img6_9").stop(true, true).removeClass("fadeInRight animated").css("opacity", 0);
+						$(".img6_10").stop(true, true).removeClass("fadeInRight animated").css("opacity", 0);
+						$(".img6_11").stop(true, true).removeClass("fadeInRight animated").css("opacity", 0);
+					}
+					if(swiper.activeIndex != 6) {
+						$(".img7_1").stop(true, true).removeClass("fadeInUp animated").css("opacity", 0);
+						$(".img7_2").stop(true, true).removeClass("fadeInDown animated").css("opacity", 0);
+						$(".img7_3").stop(true, true).removeClass("fadeInDown animated").css("opacity", 0);
+						$(".img7_5").stop(true, true).removeClass("fadeInDown animated").css("opacity", 0);
+						$(".img7_7").stop(true, true).removeClass("fadeInDown animated").css("opacity", 0);
+					};
+					if(swiper.activeIndex != 7) {
+						$(".img8_2").stop(true, true).removeClass("biankuang").css("opacity", 0);
+						$(".img8_3").stop(true, true).removeClass("tu1").css("opacity", 0);
+						$(".img8_4").stop(true, true).removeClass("yezia").css("opacity", 0);
+						$(".img8_5").stop(true, true).removeClass("yezib").css("opacity", 0);
+						$(".img8_6").stop(true, true).removeClass("yezic").css("opacity", 0);
+						$(".img8_7").stop(true, true).removeClass("yezid").css("opacity", 0);
+						$(".img8_8").stop(true, true).removeClass("yezie").css("opacity", 0);
+						$(".wenzi1").stop(true, true).css("opacity", 0).removeClass("fadeIn animated");
+						$(".wenzi2").stop(true, true).css("opacity", 0).removeClass("fadeIn animated");
+						$(".img8_9").stop(true, true).css("opacity", 0).fadeOut();
+						$(".img8_10").stop(true, true).css("opacity", 0).fadeOut();
+						$(".img8_11").stop(true, true).css("opacity", 0).fadeOut();
+						$(".img_hengxian1").stop(true, true).css("opacity", 0).fadeOut();
+						$(".img_hengxian2").stop(true, true).css("opacity", 0).fadeOut();
+						$(".wenzi3").stop(true, true).css("opacity", 0).fadeOut();
+					}
+				}
+				// 如果需要前进后退按钮
+				// nextButton: '.swiper-button-next',
+				// prevButton: '.swiper-button-prev',
+
+				// 如果需要滚动条
+				// scrollbar: '.swiper-scrollbar',
+				// onSlideChangeEnd: function(Swiper) {
+				//     // console.log(swiper.activeIndex);
+				//     switch (swiper.activeIndex) {
+				//         case 0:
+				//         // $(".img1_4").addClass("yezi");
+				//         console.log(111);
+				//         // alert(111);
+				//         break;
+				//     }
+				// },
+			})
+
+			$(function() {
+				var video = document.getElementById("video");
+				$(".btn").addClass("btnonclick");
+				$(".btn").click(function() {
+					if(video.paused) {
+						video.play();
+						$(".btn").addClass("btnonclick");
+					} else {
+						video.pause();
+						$(".btn").removeClass("btnonclick");
+					}
+				})
+			})
+		</script>
+		<style>
+			@media screen and (max-width:540px) {
+				.swiper-container {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		</style>
+	</body>
+
+</html>
